@@ -1,6 +1,5 @@
-
 function add(a, b) {
-  // TODO
+  return a + b;
 }
 
 function sub(a, b) {
@@ -12,7 +11,15 @@ function mul(a, b) {
 }
 
 function calculate(a, b, op) {
-  // TODO
+  if (Number.isNaN(a) || Number.isNaN(b)) {
+    return "Entrées invalides";
+  }
+
+  if (op === "add") {
+    return add(a, b);
+  }
+
+  return "Opération non implémentée";
 }
 
 document.getElementById("calcBtn").addEventListener("click", () => {
