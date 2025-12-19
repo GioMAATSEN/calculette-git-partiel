@@ -1,9 +1,9 @@
 function add(a, b) {
-  return a + b;
+  // TODO
 }
 
 function sub(a, b) {
-  // TODO
+  return a - b;
 }
 
 function mul(a, b) {
@@ -15,8 +15,8 @@ function calculate(a, b, op) {
     return "Entrées invalides";
   }
 
-  if (op === "add") {
-    return add(a, b);
+  if (op === "sub") {
+    return sub(a, b);
   }
 
   return "Opération non implémentée";

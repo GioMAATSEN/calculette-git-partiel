@@ -1,6 +1,6 @@
 # Mini-projet Calculette Web (Git Flow)
 
 ## Fonctionnalités
-- [x] Addition
-- [ ] Soustraction
+- [ ] Addition
+- [x] Soustraction
 - [ ] Multiplication
