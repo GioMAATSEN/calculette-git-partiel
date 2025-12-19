@@ -1,5 +1,5 @@
 function add(a, b) {
-  // TODO
+  return a + b;
 }
 
 function sub(a, b) {
@@ -7,7 +7,7 @@ function sub(a, b) {
 }
 
 function mul(a, b) {
-  // TODO
+  return a * b;
 }
 
 function calculate(a, b, op) {
@@ -15,11 +15,11 @@ function calculate(a, b, op) {
     return "Entrées invalides";
   }
 
-  if (op === "sub") {
-    return sub(a, b);
-  }
+  if (op === "add") return add(a, b);
+  if (op === "sub") return sub(a, b);
+  if (op === "mul") return mul(a, b);
 
-  return "Opération non implémentée";
+  return "Opération inconnue";
 }
 
 document.getElementById("calcBtn").addEventListener("click", () => {
